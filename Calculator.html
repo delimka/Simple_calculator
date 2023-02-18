@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+  <title> Calculator </title>
+  </head>
+  
+  <body>
+  <form name="calc" action="">
+  <script LANGUAGE ="JavaScript" src="JS/CalcFuntion.js"> </script>
+  <link href="CSS/style.css" rel="stylesheet">
+
+ <div class="calcul">
+
+     <div class="logo">
+         <img class="logo-img" src="IMG/untitled-1.png">
+
+
+         <div class="overlay">
+             <div class="text">Calculator</div>
+         </div>
+     </div>
+
+ <div><input id="type" class="calc-screen" name="ReadOut" type="Text" readonly
+value="0" value=''></div>
+
+     <div class="buttons">
+
+         <div class="row1">
+<div class="back"> <input class="btn Back" type="Button" value="<-" onclick="Back()"/> </div>
+<div class="clear"> <input class="btn Clear bg-red" type="Button" value="C" onclick="Clear()"/> </div>
+     </div>
+
+         <div class="row2">
+<div class="seven"> <input class="btn Seven bg-gray" type="Button" value="7" onclick="NumPressed(7)"/> </div>
+<div class="eight"> <input class="btn Eight bg-gray" type="Button" value="8" onclick="NumPressed(8)"/> </div>
+<div class="nine"> <input class="btn Nine bg-gray" type="Button" value="9" onclick="NumPressed(9)"/> </div>
+<div class="+"> <input class="btn Plus" type="Button" value="+" onclick="Operation('+')"/> </div>
+<div class="*"> <input class="btn Multiply" type="Button" value="*" onclick="Operation('*')"/> </div>
+         </div>
+
+         <div class="row3">
+<div class="four"> <input class="btn Four bg-gray" type="Button" value="4" onclick="NumPressed(4)"/> </div>
+<div class="five"> <input class="btn Five bg-gray" type="Button" value="5" onclick="NumPressed(5)"/> </div>
+<div class="six"> <input class="btn Six bg-gray" type="Button" value="6" onclick="NumPressed(6)"/> </div>
+<div class="minus"> <input class="btn Minus" type="Button" value="-" onclick="Operation('-')"/> </div>
+<div class="divide"> <input class="btn Divide" type="Button" value="/" onclick="Operation('/')"/> </div>
+     </div>
+
+         <div class="row4">
+<div class="one"> <input class="btn One bg-gray" type="Button" value="1" onclick="NumPressed(1)"/> </div>
+<div class="two"> <input class="btn Two bg-gray" type="Button" value="2" onclick="NumPressed(2)"/> </div>
+<div class="three"> <input class="btn Three bg-gray" type="Button" value="3" onclick="NumPressed(3)"/> </div>
+<div class="percentage"> <input class="btn Percentage" type="Button" value="%" onclick="Operation('%')"/> </div>
+     </div>
+
+         <div class="row5">
+ <div class="zero"><input class="btn Zero bg-gray" type="Button" value="0" onclick="NumPressed(0)"/> </div>
+ <div class="decimal"> <input class="btn Decimal" type="Button" value="." onclick="Decimal('.')"/> </div>
+ <div class="neg"> <input class="btn Neg" type="Button" value="+/-" onclick="Neg()"/> </div>
+ <div class="equals"><input id="btnWide"  class ="btn Equals bg-darkgray" type="Button" value="=" onclick="Operation('=')"/></div>
+         </div>
+
+     </div>
+ </div>
+  </form>
+  </body>
+  </html>
